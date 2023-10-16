@@ -9,6 +9,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="EasyNetQ" Version="7.6.0" />
+        <PackageReference Include="EasyNetQ.DI.Microsoft" Version="7.6.0" />
+        <PackageReference Include="EasyNetQ.Serialization.SystemTextJson" Version="7.6.0" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
     </ItemGroup>
 
@@ -20,5 +23,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\IntegrationTests.DataAccess\IntegrationTests.DataAccess.csproj" />
+      <ProjectReference Include="..\IntegrationTests.Events\IntegrationTests.Events.csproj" />
     </ItemGroup>
 </Project>

@@ -8,6 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="EasyNetQ" Version="7.6.0" />
+        <PackageReference Include="EasyNetQ.DI.Microsoft" Version="7.6.0" />
+        <PackageReference Include="EasyNetQ.Serialization.SystemTextJson" Version="7.6.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
           <PrivateAssets>all</PrivateAssets>
@@ -24,6 +27,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\IntegrationTests.DataAccess\IntegrationTests.DataAccess.csproj" />
+      <ProjectReference Include="..\IntegrationTests.Events\IntegrationTests.Events.csproj" />
     </ItemGroup>
 
 </Project>
